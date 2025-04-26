@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 2.0</title>
+    <link rel="stylesheet" href="cacl2.css">
+</head>
+<body>
+    <div class="calc-fundo">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="calc-result"></p>
+            <table>
+                <tr>
+                    <td><button class="calc-buttons sinal" onclick="clickNumber('+')">+</button></td>
+                    <td><button class="calc-buttons sinal" onclick="clickNumber('-')">-</button></td>
+                    <td><button class="calc-buttons sinal" onclick="clickNumber('/')">&divide;</button></td>
+                    <td><button class="calc-buttons sinal" onclick="clickNumber('*')">&times;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="calc-buttons" onclick="clickNumber('7')">7</button></td>
+                    <td><button class="calc-buttons" onclick="clickNumber('8')">8</button></td>
+                    <td><button class="calc-buttons" onclick="clickNumber('9')">9</button></td>
+                    <td><button class="calc-buttons sinal" onclick="limpaNumber()">&lt;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="calc-buttons" onclick="clickNumber('4')">4</button></td>
+                    <td><button class="calc-buttons" onclick="clickNumber('5')">5</button></td>
+                    <td><button class="calc-buttons" onclick="clickNumber('6')">6</button></td>
+                    <td><button class="calc-buttons sinal" onclick="limpaCampo()">C</button></td>
+                </tr>
+                <tr>
+                    <td><button class="calc-buttons" onclick="clickNumber('1')">1</button></td>
+                    <td><button class="calc-buttons" onclick="clickNumber('2')">2</button></td>
+                    <td><button class="calc-buttons" onclick="clickNumber('3')">3</button></td>
+                    <td rowspan="2"><button class="calc-buttons sinal" style="height: 106px;" onclick="calcularResult()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="calc-buttons" style="width: 106px;" onclick="clickNumber('0')">0</button></td>
+                    <td><button class="calc-buttons" onclick="clickNumber('.')">.</button></td>
+                </tr>
+            </table>
+            <p class="dev-Dio">&copy; 26/04/2025 | Desenvolvido por Diogo</p>
+        </div>
+    </div>
+
+    <script src="calc2.js"></script>
+</body>
+</html>
